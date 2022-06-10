@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@300;400;500;600;700&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Artifika&family=Barlow+Condensed:ital,wght@0,800;0,900;1,400;1,800&family=Bebas+Neue&family=Cairo:wght@200;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&family=Secular+One&family=Shadows+Into+Light&family=Spline+Sans+Mono:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto Condensed;
+    background-color: black;
+    color: white;
+
+}
+.home-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.home-page .navigation{
+    width: 10%;
+    height: 100%;
+    background-color: orangered;
+    border-radius: 0 1em 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+}
+.home-page .navigation .nav{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 3em;
+}
+.home-page .navigation .nav a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    transform: rotate(-90deg);
+}
+.home-page .navigation .nav a::first-letter{
+    font-size: 1.1em;
+    color: white;
+}
+.home-page .container{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.home-page .container .img{
+    width: 65%;
+    height: 45%;
+    margin-left: 1em;
+    overflow: hidden;
+    border-radius: 1em;
+}
+.home-page .container .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;    
+}
+.home-page .container .title{
+    width: 95%;
+    height: 40%;
+    padding-left: 2em ;
+
+
+}
+.home-page .container .title p{
+    text-transform: capitalize;
+}
+.home-page .container .title h1{
+    font-size: 4em;
+    text-transform: uppercase;
+    width: 100%;
+}
+.home-page .container .title h1 span{
+    color: orangered;
+
+}
+.home-page .container .title h2{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+
+}
+.home-page .container .title h2::first-letter{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.home-page .container .title h2 span{
+    position: relative;
+    text-transform: capitalize;
+
+}
+.home-page .container .title h2 span::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: orangered;
+}
+
+.secend-page{
+    width: 90%;
+    height: 100vh;
+    position: relative;
+    left: 10%;
+}
+.secend-page .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+.secend-page .container .title{
+    width: 90%;
+
+}
+.secend-page  .container .title h2{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.secend-page  .container .title h2::first-letter{
+    font-size: 1.5em;
+    color: orangered;
+}
+.secend-page  .container .title p{
+    margin-top: 0.4em;
+    line-height: 1.4;
+    width: 70%;
+    margin-left: 5%;
+}
+.secend-page  .container .title a{
+    display: block;
+    font-size: 1em;
+    width: fit-content;
+    padding: 0.1em 0.4em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0.5em 0em;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 7px orangered;
+}
+.secend-page  .container .image{
+    width: 60%;
+    height: 50%;
+    margin-left: 4em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2em;
+    
+}
+.secend-page  .container .image::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 30%;
+    width: 50%;
+    height: 200%;
+    background-color: orangered;
+    filter: blur(10px);
+    z-index: -1;
+    animation: width-bar 4s infinite linear  ;
+
+}
+@keyframes width-bar {
+0%{
+transform: rotate(0deg); 
+}
+100%{
+ 
+    transform: rotate(360deg); 
+}
+}
+.secend-page  .container .image img{
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2em;
+    filter:brightness(50%);
+    
+
+}
